@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <title>OKTOBAR 2 KVIZ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<style>
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+	</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Bhai|Girassol|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="materialize.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="widget col l4 m12 s12 offset-l4">
+          <h4> OKTOBAR 2 KVIZ </h4>
+          <h6> It ain't over 'til it's October! </h6>
+          <form class="col s12">
+            <div class="row"> 
+              <div class="input-field col s12">
+			   <text><font size=2>Koliko je Ekonomski fakultet ukupno zaradio od prijava ispita u roku Oktobar 2 ove godine?</font></text>
+                <input id="prihod" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="10">
+              </div>
+              <div class="input-field col s12">
+			   <text><font size=2>Koliko je jedna osoba najviše prijavila ispita?</font></text>
+                <select id="entuzijastagodine">
+				  <option disabled selected value></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+				  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+				  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+				  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+				  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                </select>
+              </div>			  
+              <div class="input-field col s12">
+			   <text><font size=2>Koliko je studenata prijavilo <b>1 ispit</b>?</font></text>
+                <input id="is1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="4">
+              </div>
+			 <div class="input-field col s12">
+			   <text><font size=2>Koliko je studenata prijavilo <b>2 ispita</b>?</font></text>
+                <input id="is2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="4">
+              </div>
+			 <div class="input-field col s12">
+			   <text><font size=2>Koliko je studenata prijavilo <b>3 ispita</b>?</font></text>
+                <input id="is3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="4">
+              </div>
+			 <div class="input-field col s12">
+			   <text><font size=2>Koliko je studenata prijavilo <b>4 ispita</b>?</font></text>
+                <input id="is4" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="3">
+              </div>
+			 <div class="input-field col s12">
+			   <text><font size=2>Koliko je studenata prijavilo <b>5 ispita</b>?</font></text>
+                <input id="is5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="3">
+              </div>
+			 <div class="input-field col s12">
+			   <text><font size=2>Koliko je studenata prijavilo <b>6 ispita</b>?</font></text>
+                <input id="is6" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="3">
+              </div>
+			 <div class="input-field col s12">
+			   <text><font size=2>Koliko je studenata prijavilo <b>7 ispita</b>?</font></text>
+                <input id="is7" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="2">
+              </div>
+			 <div class="input-field col s12">
+			   <text><font size=2>Koliko je studenata prijavilo <b>8 ispita</b>?</font></text>
+                <input id="is8" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="2">
+              </div>
+			 <div class="input-field col s12">
+			   <text><font size=2>Koliko je studenata prijavilo <b>9 ispita</b>?</font></text>
+                <input id="is9" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+				type="number" maxlength="2">
+              </div>
+              <div class="input-field col s12">
+                <center><button onclick=output() class="btn waves-effect waves-light" type="button">Zabeleži odgovore</button></center>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+ function output(){
+ 
+  var prihod = document.getElementById('prihod').value;
+  var entuzijastagodine = document.getElementById('entuzijastagodine').value;
+  var is1 = document.getElementById('is1').value;
+  var is2 = document.getElementById('is2').value;
+  var is3 = document.getElementById('is3').value;
+  var is4 = document.getElementById('is4').value;
+  var is5 = document.getElementById('is5').value;
+  var is6 = document.getElementById('is6').value;
+  var is7 = document.getElementById('is7').value;
+  var is8 = document.getElementById('is8').value;
+  var is9 = document.getElementById('is9').value;
+ 
+ document.write("<b>Ukupan prihod: </b>"+prihod+" RSD"+"<br>"
+ +"<b>Najviše prijavljeno ispita: </b>"+entuzijastagodine+"<br>"
+ +"Studenata koji su prijavili <b>1 ispit: </b>"+is1+" (granice: "+is1*0.9+", "+is1*1.1+")"+"<br>"
+ +"Studenata koji su prijavili <b>2 ispita: </b>"+is2+" (granice: "+is2*0.9+", "+is2*1.1+")"+"<br>"
+ +"Studenata koji su prijavili <b>3 ispita: </b>"+is3+" (granice: "+is3*0.9+", "+is3*1.1+")"+"<br>"
+ +"Studenata koji su prijavili <b>4 ispita: </b>"+is4+" (granice: "+is4*0.9+", "+is4*1.1+")"+"<br>"
+ +"Studenata koji su prijavili <b>5 ispita: </b>"+is5+" (granice: "+is5*0.9+", "+is5*1.1+")"+"<br>"
+ +"Studenata koji su prijavili <b>6 ispita: </b>"+is6+" (granice: "+is6*0.9+", "+is6*1.1+")"+"<br>"
+ +"Studenata koji su prijavili <b>7 ispita: </b>"+is7+" (granice: "+is7*0.9+", "+is7*1.1+")"+"<br>"
+ +"Studenata koji su prijavili <b>8 ispita: </b>"+is8+" (granice: "+is8*0.9+", "+is8*1.1+")"+"<br>"
+ +"Studenata koji su prijavili <b>9 ispita: </b>"+is9+" (granice: "+is9*0.9+", "+is9*1.1+")"+"<br>")};
+  
+
+  document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+  </script>
+</html>
