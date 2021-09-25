@@ -92,11 +92,6 @@
                 <input id="is8" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
 				type="number" maxlength="2">
               </div>
-			 <div class="input-field col s12">
-			   <text><font size=2>Koliko je studenata prijavilo <b>9 ispita</b>?</font></text>
-                <input id="is9" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-				type="number" maxlength="2">
-              </div>
               <div class="input-field col s12">
                 <center><button onclick=output() class="btn waves-effect waves-light" type="button">Zabeleži odgovore</button></center>
               </div>
@@ -119,7 +114,6 @@
   var is6 = document.getElementById('is6').value;
   var is7 = document.getElementById('is7').value;
   var is8 = document.getElementById('is8').value;
-  var is9 = document.getElementById('is9').value;
  
  document.write("<b>Ukupan prihod: </b>"+prihod+" RSD"+"<br>"
  +"(granice: "+prihod*9/10+", "+prihod*11/10+")"+"<br>"+"<br>"
@@ -131,8 +125,7 @@
  +"Studenata koji su prijavili <b>5 ispita: </b>"+is5+" (granice: "+is5*9/10+", "+is5*11/10+")"+"<br>"
  +"Studenata koji su prijavili <b>6 ispita: </b>"+is6+" (granice: "+is6*9/10+", "+is6*11/10+")"+"<br>"
  +"Studenata koji su prijavili <b>7 ispita: </b>"+is7+" (granice: "+is7*9/10+", "+is7*11/10+")"+"<br>"
- +"Studenata koji su prijavili <b>8 ispita: </b>"+is8+" (granice: "+is8*9/10+", "+is8*11/10+")"+"<br>"
- +"Studenata koji su prijavili <b>9 ispita: </b>"+is9+" (granice: "+is9*9/10+", "+is9*11/10+")"+"<br>")};
+ +"Studenata koji su prijavili <b>8 ispita: </b>"+is8+" (granice: "+is8*9/10+", "+is8*11/10+")"+"<br>")};
   
 
   document.addEventListener('DOMContentLoaded', function() {
